@@ -1,0 +1,10 @@
+applications:
+  - name: simplelogger1
+    host: simplelogger-app
+    memory: 120M
+    instances: 1
+    path: ./target/logger-0.0.1-SNAPSHOT.jar
+    buildpack: java_buildpack
+    domain: 169.50.202.75.nip.io
+    env:
+      testenvvar: envvarvalue
