@@ -53,6 +53,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+				      <environmentVariables>
+							<file_storage_location>\temp\test-cf-poc</file_storage_location>
+					  </environmentVariables>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
